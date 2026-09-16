@@ -1,0 +1,42 @@
+name: Publish to Zapstore
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install zsp
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 \
+            https://github.com/zapstore/zsp/releases/download/v0.4.17/zsp-0.4.17-linux-amd64 \
+            --output "$RUNNER_TEMP/zsp"
+          echo "3f241da6a5dc7a85fe851d3b42b77790b651bd36c7029382a701262bda832d20  $RUNNER_TEMP/zsp" \
+            | sha256sum --check
+          chmod +x "$RUNNER_TEMP/zsp"
+
+      - name: Publish to Zapstore
+        env:
+          SIGN_WITH: ${{ secrets.ZAPSTORE_BUNKER_URL }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test -n "${SIGN_WITH:-}" || {
+            echo "Missing ZAPSTORE_BUNKER_URL repository secret" >&2
+            exit 1
+          }
+          "$RUNNER_TEMP/zsp" publish \
+            --quiet \
+            --skip-certificate-linking \
+            zapstore.yaml
