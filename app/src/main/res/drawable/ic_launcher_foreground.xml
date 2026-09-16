@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Time Sheet launcher foreground: a timesheet page with a 5 o'clock clock
+  on its corner — "the workday is done, log your hours."
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Paper sheet -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,26 H61 A7,7 0 0 1 68,33 V75 A7,7 0 0 1 61,82 H39 A7,7 0 0 1 32,75 V33 A7,7 0 0 1 39,26 Z" />
+
+    <!-- Logged-hour lines -->
+    <path
+        android:fillColor="#C7D3F2"
+        android:pathData="M39.5,36 H56.5 A2,2 0 0 1 56.5,40 H39.5 A2,2 0 0 1 39.5,36 Z" />
+    <path
+        android:fillColor="#C7D3F2"
+        android:pathData="M39.5,45 H56.5 A2,2 0 0 1 56.5,49 H39.5 A2,2 0 0 1 39.5,45 Z" />
+    <path
+        android:fillColor="#C7D3F2"
+        android:pathData="M39.5,54 H48 A2,2 0 0 1 48,58 H39.5 A2,2 0 0 1 39.5,54 Z" />
+
+    <!-- Clock face -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51.5,66 A14.5,14.5 0 1 0 80.5,66 A14.5,14.5 0 1 0 51.5,66 Z" />
+    <!-- Clock ring -->
+    <path
+        android:strokeColor="#2747B5"
+        android:strokeWidth="3"
+        android:pathData="M51.5,66 A14.5,14.5 0 1 0 80.5,66 A14.5,14.5 0 1 0 51.5,66 Z" />
+    <!-- Minute hand (12) -->
+    <path
+        android:strokeColor="#2747B5"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M66,66 V57" />
+    <!-- Hour hand (5 o'clock) -->
+    <path
+        android:strokeColor="#2747B5"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M66,66 L69.3,71.7" />
+    <!-- Center pin -->
+    <path
+        android:fillColor="#2747B5"
+        android:pathData="M64.6,66 A1.4,1.4 0 1 0 67.4,66 A1.4,1.4 0 1 0 64.6,66 Z" />
+</vector>

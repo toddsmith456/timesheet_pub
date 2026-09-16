@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fallback launcher background (also used by adaptive icon) -->
+    <color name="ic_launcher_background">#3558D6</color>
+
+    <!-- Window background shown before Compose draws its first frame -->
+    <color name="window_background_light">#F9F9FF</color>
+    <color name="window_background_dark">#111318</color>
+</resources>

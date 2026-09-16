@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Monochrome layer for Android 13+ themed icons (and the splash icon).
+  Single-tint line art: paper outline with a gap where the clock sits.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Paper outline, open where the clock overlaps the right edge -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M67.36,77.93 A7,7 0 0 1 61,82 H39 A7,7 0 0 1 32,75 V33 A7,7 0 0 1 39,26 H61 A7,7 0 0 1 68,33 V54.2" />
+
+    <!-- Logged-hour lines -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39.5,36 H56.5 A2,2 0 0 1 56.5,40 H39.5 A2,2 0 0 1 39.5,36 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39.5,45 H56.5 A2,2 0 0 1 56.5,49 H39.5 A2,2 0 0 1 39.5,45 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39.5,54 H48 A2,2 0 0 1 48,58 H39.5 A2,2 0 0 1 39.5,54 Z" />
+
+    <!-- Clock ring -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:pathData="M54,66 A12,12 0 1 0 78,66 A12,12 0 1 0 54,66 Z" />
+    <!-- Hands -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M66,66 V58.5" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M66,66 L69.25,71.6" />
+</vector>

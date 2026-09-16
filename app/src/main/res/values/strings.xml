@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time Sheet</string>
+    <string name="notification_channel_alarms">Job alarms</string>
+    <string name="notification_channel_alarms_desc">Ringing, vibration and full-screen prompts when a job alarm fires</string>
+    <string name="snooze_action">Snooze %1$d min</string>
+    <string name="dismiss_action">Dismiss</string>
+</resources>
