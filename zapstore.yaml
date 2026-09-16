@@ -1,0 +1,21 @@
+repository: https://github.com/toddsmith456/timesheet_pub
+
+pubkey: npub1YOUR_PUBLIC_KEY
+
+name: Time Sheet
+summary: Alarm-driven timesheet and job hour tracker
+
+description: |
+  Time Sheet helps track work hours by turning job schedules into alarms.
+  When an alarm fires, enter your hours and they are logged for the day.
+
+tags:
+  - productivity
+  - time-tracking
+  - business
+
+license: MIT
+website: https://github.com/toddsmith456/timesheet_pub
+
+metadata_sources:
+  - github
